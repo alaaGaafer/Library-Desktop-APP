@@ -4,9 +4,12 @@ namespace CU_Library
 {
     public partial class Log_In : Form
     {
+
         public Log_In()
         {
+
             InitializeComponent();
+
         }
         public static string U_ID = "";
         public static bool A_login = false;
@@ -85,9 +88,9 @@ namespace CU_Library
             { MessageBox.Show("Error\nPlease check your inputs"); }
         }
 
-        private void Log_In_Load(object sender, EventArgs e)
+        private void Log_In_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

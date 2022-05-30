@@ -10,7 +10,7 @@ namespace CU_Library
         {
 
             ApplicationConfiguration.Initialize();
-            Application.Run(new Log_In());
+            Application.Run(new Splash());
             
         }
     }

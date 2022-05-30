@@ -38,6 +38,7 @@
             this.Student_RButton = new System.Windows.Forms.RadioButton();
             this.Admin_RButton = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +86,7 @@
             // 
             // Log_In_Button
             // 
-            this.Log_In_Button.Location = new System.Drawing.Point(226, 340);
+            this.Log_In_Button.Location = new System.Drawing.Point(158, 334);
             this.Log_In_Button.Name = "Log_In_Button";
             this.Log_In_Button.Size = new System.Drawing.Size(94, 29);
             this.Log_In_Button.TabIndex = 5;
@@ -117,6 +118,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.Log_In_Button);
             this.groupBox1.Location = new System.Drawing.Point(69, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(388, 384);
@@ -132,7 +134,6 @@
             this.ClientSize = new System.Drawing.Size(861, 408);
             this.Controls.Add(this.Admin_RButton);
             this.Controls.Add(this.Student_RButton);
-            this.Controls.Add(this.Log_In_Button);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.label3);
@@ -141,7 +142,8 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Log_In";
             this.Text = "CU Library";
-            this.Load += new System.EventHandler(this.Log_In_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Log_In_FormClosing);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
