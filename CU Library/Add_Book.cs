@@ -13,6 +13,10 @@ namespace CU_Library
             dateTimePicker1.ShowUpDown = true;
         }
 //just a cooment
+if (Author_Name.Text == "" || Publisher_Name.Text == "" || Quantity.Text == "" || Book_title.Text == "")
+                {
+                    MessageBox.Show("Please enter the data");
+                }
         private void Add_Book_Button_Click(object sender, EventArgs e)
         {
             try
